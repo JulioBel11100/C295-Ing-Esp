@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>C295 · Inglés Técnico</title>
+<meta name="theme-color" content="#12181D">
+<meta name="description" content="App de práctica de inglés técnico aeronáutico para montadores del C295">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="installbanner" id="installbanner">
+    <span>📲 Puedes instalar esta app en tu dispositivo</span>
+    <div style="display:flex;gap:6px;">
+      <button id="install-btn">Instalar</button>
+      <span class="iconbtn" id="install-dismiss">✕</span>
+    </div>
+  </div>
+
+  <div class="updatebanner" id="updatebanner">
+    <span>🔄 Nueva versión disponible</span>
+    <div style="display:flex;gap:6px;">
+      <button id="update-btn">Actualizar</button>
+      <span class="iconbtn" id="update-dismiss">✕</span>
+    </div>
+  </div>
+
+  <div class="plate">
+    <div class="rivet tl"></div><div class="rivet tr"></div><div class="rivet bl"></div><div class="rivet br"></div>
+    <div class="eyebrow">
+      <span>Panel de instrucción &middot; Study Panel</span>
+      <span class="actions">
+        <span class="iconbtn" id="open-stats">📊</span>
+        <span class="iconbtn" id="open-settings">⚙️</span>
+      </span>
+    </div>
+    <h1>English for the C295</h1>
+    <div class="subtitle" id="subtitle"></div>
+    <div class="statline">
+      <span id="stat-block">BLOQUE 01</span>
+      <span id="stat-mode">MODO: FLASHCARDS</span>
+      <span id="stat-progress">0/20</span>
+      <span class="streak" id="stat-streak">🔥 0 días</span>
+    </div>
+  </div>
+
+  <div class="blocklabel" id="blocklabel">Seleccionar bloque / Select block</div>
+  <div class="blocks" id="blocks"></div>
+
+  <div class="blocktitle" id="blocktitle-wrap">
+    <div class="es" id="bt-es"></div>
+    <div class="en" id="bt-en"></div>
+  </div>
+
+  <div class="modegrid">
+    <div class="segbtn active" id="mode-cards">🗂 Tarjetas</div>
+    <div class="segbtn" id="mode-quiz">✍️ Test</div>
+    <div class="segbtn" id="mode-dict">🎧 Dictado</div>
+    <div class="segbtn" id="mode-speak">🎤 Pronuncia</div>
+    <div class="segbtn" id="mode-review">⏱ Repaso</div>
+    <div class="segbtn" id="mode-exam">🎓 Examen</div>
+  </div>
+
+  <div class="dirbar" id="dirbar">
+    <span>Dirección:</span>
+    <div class="dirbtn on" id="dir-es-en">ES → EN</div>
+    <div class="dirbtn" id="dir-en-es">EN → ES</div>
+  </div>
+
+  <div class="stage" id="stage"></div>
+
+  <footer>MONTAJE AERONÁUTICO C295 · MATERIAL DE ESTUDIO PERSONAL</footer>
+</div>
+
+<div id="modal-root"></div>
+
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
