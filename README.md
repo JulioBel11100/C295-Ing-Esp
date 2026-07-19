@@ -132,12 +132,4 @@ para ir más allá:
   el futuro se quisiera sincronización automática, haría falta un
   backend real (servidor + base de datos), que ya es otro nivel de
   proyecto.
-- **No está en la App Store / Google Play**: al ser una PWA no lo
-  necesita para instalarse en el móvil, pero si algún día se quisiera
-  publicar oficialmente en las tiendas, se puede empaquetar con
-  herramientas como Capacitor o Bubblewrap a partir de esta misma base.
 
----
-
-Cualquier duda sobre cómo tocar algo de esto, puedes volver a preguntarme
-mostrándome qué archivo quieres cambiar y qué te gustaría que hiciera.
